@@ -1,5 +1,13 @@
-package Principal;
+package principal;
 
-public class Main {
+import vista.*;
 
+public class Main{
+
+	public static void main(String[] args) {
+		Ventanamenu frame = new Ventanamenu();
+		frame.setVisible(true);
+		
+		
+	}
 }
