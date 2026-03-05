@@ -1,21 +1,20 @@
-package modelos;
-
-import java.awt.Rectangle;
+package Modelos;
 
 public class Proyectil {
-    public int x, y, velocidad, ancho, alto;
+    public double x, y;
+    public int velocidad, ancho, alto;
 
-    public Proyectil(int x, int y, int velocidad){
+    public Proyectil(double x, double y, int velocidad, int ancho, int alto) {
         this.x = x;
         this.y = y;
         this.velocidad = velocidad;
-        this.ancho = 5;
-        this.alto = 10;
+        this.ancho = ancho;
+        this.alto = alto;
     }
 
     //Para cuando el proyectil 
     public Rectangle getBounds() {
-        return new Rectangle(x, y, ancho, alto);
+        return new Rectangle((int)x, (int)y, ancho, alto);
     }
 
     //Para mover el proyectil hacia arriba.

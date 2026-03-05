@@ -1,11 +1,9 @@
-package modelos;
-
-import java.awt.Rectangle;
+package Modelos;
 
 public class Nave {
     public int x;
     public int y;
-    public int velocidad = 8;
+    public int velocidad;
     public int vida;
     public int ancho;
     public int alto;
@@ -15,11 +13,12 @@ public class Nave {
         this.y = y;
         this.velocidad = velocidad;
         this.vida = vida;
-        this.ancho = 40;
-        this.alto = 20;
+        this.ancho = ancho;
+        this.alto = alto;
     }
 
     public Rectangle getBounds() {
         return new Rectangle(x, y, ancho, alto);
     }
+
 }
