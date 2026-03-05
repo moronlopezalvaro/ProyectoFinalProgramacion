@@ -15,12 +15,12 @@ import javax.sound.sampled.LineUnavailableException;
 import javax.sound.sampled.UnsupportedAudioFileException;
 import javax.swing.*;
 
-public class Ventanamenu extends JFrame implements ActionListener {
+public class VentanaMenu extends JFrame implements ActionListener {
 
     JPanel1Menu panel = new JPanel1Menu();
     JButton botonStart;
 
-    public Ventanamenu() {
+    public VentanaMenu() {
 
         this.setTitle("NOMBRE");
         this.setSize(new Dimension(1080, 720));
@@ -29,7 +29,7 @@ public class Ventanamenu extends JFrame implements ActionListener {
         panel.setLayout(null);
 
         // Cargar la imagen original
-        ImageIcon iconoOriginal = new ImageIcon(getClass().getResource("/resources/StartIcono.jpeg"));
+        ImageIcon iconoOriginal = new ImageIcon(getClass().getResource("/resources/StartIcono.png"));
 
         // Reescalar la imagen al tamaño que quieras (por ejemplo 150x50)
         Image imagenEscalada = iconoOriginal.getImage().getScaledInstance(150, 50, Image.SCALE_SMOOTH);
@@ -41,7 +41,7 @@ public class Ventanamenu extends JFrame implements ActionListener {
         botonStart = new JButton(iconoStart);
 
         // Ajustar el tamaño del botón al de la imagen reescalada
-        botonStart.setBounds(430, 440, 205, 50);
+        botonStart.setBounds(430, 560, 205, 50);
 
         // Quitar borde y fondo
         botonStart.setBorderPainted(false);
@@ -63,8 +63,12 @@ public class Ventanamenu extends JFrame implements ActionListener {
 
     public void actionPerformed(ActionEvent e) {
         if (e.getSource() == botonStart) {
-            System.exit(0);
-            // METER JPANEL2
+            // Instanciar y hacer visible la nueva ventana de diálogo
+            VentanaDialogo ventanaDialogo = new VentanaDialogo();
+            ventanaDialogo.setVisible(true);
+
+            // Cerrar la ventana del menú actual
+            this.dispose();
         }
     }
 
