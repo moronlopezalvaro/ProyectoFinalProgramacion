@@ -15,12 +15,12 @@ import javax.sound.sampled.LineUnavailableException;
 import javax.sound.sampled.UnsupportedAudioFileException;
 import javax.swing.*;
 
-public class Ventanamenu extends JFrame implements ActionListener {
+public class VentanaMenu extends JFrame implements ActionListener {
 
     JPanel1Menu panel = new JPanel1Menu();
     JButton botonStart;
 
-    public Ventanamenu() {
+    public VentanaMenu() {
 
         this.setTitle("NOMBRE");
         this.setSize(new Dimension(1080, 720));
@@ -63,8 +63,12 @@ public class Ventanamenu extends JFrame implements ActionListener {
 
     public void actionPerformed(ActionEvent e) {
         if (e.getSource() == botonStart) {
-            System.exit(0);
-            // METER JPANEL2
+            // Instanciar y hacer visible la nueva ventana de diálogo
+            VentanaDialogo ventanaDialogo = new VentanaDialogo();
+            ventanaDialogo.setVisible(true);
+
+            // Cerrar la ventana del menú actual
+            this.dispose();
         }
     }
 

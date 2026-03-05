@@ -1,6 +1,5 @@
 package vista;
 
-import java.awt.Font;
 import java.awt.*;
 
 import javax.swing.*;
@@ -9,7 +8,6 @@ public class JPanel1Menu extends JPanel {
 
     public JPanel1Menu() {
         this.setLayout(null);
-
     }
 
     @Override
