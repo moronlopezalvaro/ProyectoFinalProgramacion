@@ -1,5 +1,5 @@
 package vista;
 
-public class VentanaJuego {
+public class Ventanajuego {
 
 }

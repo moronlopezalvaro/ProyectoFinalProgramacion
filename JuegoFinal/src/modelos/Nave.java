@@ -1,5 +1,7 @@
 package modelos;
 
+import java.awt.Rectangle;
+
 public class Nave {
     public int x;
     public int y;
@@ -13,8 +15,8 @@ public class Nave {
         this.y = y;
         this.velocidad = velocidad;
         this.vida = vida;
-        this.ancho = ancho;
-        this.alto = alto;
+        this.ancho = 40;
+        this.alto = 20;
     }
 
     public Rectangle getBounds() {

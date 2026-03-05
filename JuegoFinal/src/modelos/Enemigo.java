@@ -1,5 +1,6 @@
 package modelos;
 
-public class Enemigo {
+public class enemigo {
 
 }
+

@@ -1,7 +1,6 @@
 package vista;
 
 import java.awt.*;
-import java.awt.FlowLayout;
 import java.awt.Image;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -15,12 +14,12 @@ import javax.sound.sampled.LineUnavailableException;
 import javax.sound.sampled.UnsupportedAudioFileException;
 import javax.swing.*;
 
-public class VentanaMenu extends JFrame implements ActionListener {
+public class Ventanamenu extends JFrame implements ActionListener {
 
     JPanel1Menu panel = new JPanel1Menu();
     JButton botonStart;
 
-    public VentanaMenu() {
+    public Ventanamenu() {
 
         this.setTitle("NOMBRE");
         this.setSize(new Dimension(1080, 720));

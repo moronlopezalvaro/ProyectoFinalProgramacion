@@ -1,5 +1,6 @@
-package Modelos;
+package modelos;
 
 public class enemigo {
 
 }
+

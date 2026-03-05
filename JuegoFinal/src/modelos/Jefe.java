@@ -1,5 +1,5 @@
 package modelos;
 
-public class Jefe {
+public class jefe {
 
 }
