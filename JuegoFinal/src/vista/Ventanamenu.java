@@ -41,7 +41,7 @@ public class Ventanamenu extends JFrame implements ActionListener {
         botonStart = new JButton(iconoStart);
 
         // Ajustar el tamaño del botón al de la imagen reescalada
-        botonStart.setBounds(430, 440, 205, 50);
+        botonStart.setBounds(430, 560, 205, 50);
 
         // Quitar borde y fondo
         botonStart.setBorderPainted(false);
