@@ -22,7 +22,12 @@ class Nave {
 class Proyectil {
 }
 
-class enemigo {
+class Enemigo {
 }
+
+class Jefe {
+}
+
+
 
 ```
