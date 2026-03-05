@@ -16,7 +16,7 @@ public class JPanel1Menu extends JPanel {
     protected void paintComponent(Graphics g) {
         super.paintComponent(g);
         Dimension dimension = getSize();
-        ImageIcon icon = new ImageIcon(getClass().getResource("/resources/Menu.jpeg"));
+        ImageIcon icon = new ImageIcon(getClass().getResource("/resources/Menu.png"));
         g.drawImage(icon.getImage(), 0, 0, dimension.width, dimension.height, this);
     }
 

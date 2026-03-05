@@ -29,7 +29,7 @@ public class Ventanamenu extends JFrame implements ActionListener {
         panel.setLayout(null);
 
         // Cargar la imagen original
-        ImageIcon iconoOriginal = new ImageIcon(getClass().getResource("/resources/StartIcono.jpeg"));
+        ImageIcon iconoOriginal = new ImageIcon(getClass().getResource("/resources/StartIcono.png"));
 
         // Reescalar la imagen al tamaño que quieras (por ejemplo 150x50)
         Image imagenEscalada = iconoOriginal.getImage().getScaledInstance(150, 50, Image.SCALE_SMOOTH);
